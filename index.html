@@ -15,25 +15,44 @@
 
                     <div class="header__item header__item_logo">
                         <div class="logo">
-                            <div class="logo__img">
-                                <img src="img/logo.png" alt="logo">
-                            </div>
+                            <a class="logo__link">
+                                <div class="logo__img">
+                                    <img src="img/logo.png" alt="logo">
+                                </div>
+                            </a>
                         </div>
                     </div>
+                <!--header__item_menu-active-->
+                    <div class="header__item header__item_menu ">
 
-                    <div class="header__item ">
                         <div class="menu-nav">
-                            <div class="menu-nav__item menu-nav__item-toggle">
-                                <button class="menu-nav-toggle" type="button">
+
+                            <div class="menu-nav__item menu-nav__item-toggle menu-nav__item-toggle ">
+
+                                <button class="menu-nav-toggle menu-nav-toggle_hidden" type="button">
                                     <span class="sr-only">Toggle navigation</span>
                                     <span class="icon-bar"></span>
                                     <span class="icon-bar"></span>
                                     <span class="icon-bar"></span>
                                 </button>
                             </div>
-                            <div class="menu-nav__item menu-nav__item-menu">
-                                <div class="menu">
+
+                            <div class="menu-nav__item  menu-nav__item-menu menu-nav__item-menu_hidden" >
+
+                                <div class="menu ">
                                     <ul class="menu-list">
+                                        <li class="menu-list__item menu-list__item_btn">
+                                            <div class="menu-list__btn">
+                                                <button class="btn-close" type="button">
+                                                    <picture>
+                                                        <img
+                                                                src="img/icons/close_mobile.png"
+                                                                srcset="img/icons/close_mobile@2x.png 2x"
+                                                        >
+                                                    </picture>
+                                                </button>
+                                            </div>
+                                        </li>
                                         <li class="menu-list__item">
                                             <a href="" class="menu-list__link">News</a>
                                         </li>
@@ -49,6 +68,7 @@
                                     </ul>
                                 </div>
                             </div>
+
                         </div>
                     </div>
 
@@ -61,39 +81,47 @@
 
                 <div class="content__slider">
 
-                    <div class="slider">
 
-                        <div class="slider__call-action">
-                            <div class="call-action">
-                                <div class="call-action__header">
-                                    <h1 class="call-action-header">JAVADAY KIEV CONFERENCE</h1>
+                            <div class="slider">
+                                <div class="slider__nav-btn slider__nav-btn_prev">
+                                    <button class="nav-btn" type="button">
+                                        <picture>
+                                            <img
+                                                    src="img/icons/arrow_left.png"
+                                                    srcset="img/icons/arrow_left@2x.png 2x"
+                                            >
+                                        </picture>
+                                    </button>
                                 </div>
-                                <div class="call-action__description">
-                                    <p class="call-action-description">JavaDay Kiev is an annual conference focused on new features
-                                        of the Java language and Java-related technologies.</p>
-                                </div>
-                                <div class="call-action__date">
-                                    <div class="call-action-date">
-                                        <div class="call-action-date__item"><span>January 15th</span> <span>-</span>
-                                            <span>January 17th</span></div>
+
+                                <div class="slider__call-action">
+
+                                    <div class="call-action">
+                                        <div class="call-action__row call-action__row-header">
+                                            <h1 class="call-action-header">JAVADAY KIEV CONFERENCE</h1>
+                                        </div>
+                                        <div class="call-action__row call-action__row-description">
+                                            <p class="call-action-description">JavaDay Kiev is an annual conference focused on new features
+                                                of the Java language and Java-related technologies.</p>
+                                        </div>
+                                        <div class="call-action__row call-action__row_date-btn ">
+
+                                            <div class="call-action-date">
+                                                <div class="call-action-date__item"><span>January 15th</span> <span>-</span>
+                                                    <span>January 17th</span></div>
+                                            </div>
+
+                                            <div class="call-action-btn-action">
+                                                <button type="button" class="btn-action">JOIN NOW</button>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="call-action__btn-action">
-                                    <button type="button" class="btn-action">JOIN NOW</button>
-                                </div>
-                            </div>
-                        </div>
 
-                        <div class="slider__main">
+                                <div class="slider__slides-list">
 
-                            <div class="bg-slider">
-                                <div class="bg-slider__title">
-                                </div>
-                                <div class="bg-slider__nav-btn">
-                                </div>
-                                <div class="bg-slider__slides-list">
-                                    <ul class="bg-slider-list">
-                                        <li class="bg-slider-list__item">
+                                    <ul class="slider-list">
+                                        <li class="slider-list__item">
                                             <picture>
                                                 <source srcset="img/banner_desktop_hd.png" media="(min-width:1440px)">
                                                 <source srcset="img/banner_desktop.png" media="(min-width:1024px)">
@@ -107,13 +135,38 @@
                                         </li>
                                     </ul>
                                 </div>
-                                <div class="bg-slider__nav-btn">
+
+                                <div class="slider__nav-btn slider__nav-btn_next">
+                                    <button class="nav-btn" type="button">
+                                        <picture>
+                                            <img
+                                                    src="img/icons/arrow_right.png"
+                                                    srcset="img/icons/arrow_right@2x.png 2x"
+                                            >
+                                        </picture>
+                                     </button>
                                 </div>
-                                <div class="bg-slider__nav-pager">
+
+                                <div class="slider__nav-pager">
+                                    <ul class="slider-pager">
+                                        <li class="slider-pager__item">
+                                            <a href="#" class="slider-pager__btn slider-pager__btn_active"></a>
+                                        </li>
+                                        <li class="slider-pager__item">
+                                            <a href="#" class="slider-pager__btn"></a>
+                                        </li>
+                                        <li class="slider-pager__item">
+                                            <a href="#" class="slider-pager__btn"></a>
+                                        </li>
+                                        <li class="slider-pager__item">
+                                            <a href="#" class="slider-pager__btn"></a>
+                                        </li>
+                                    </ul>
+
                                 </div>
                             </div>
-                        </div>
-                    </div>
+
+
 
                 </div>
 
@@ -350,18 +403,180 @@
                         </div>
                     </div>
                 </div>
-                <div class="content__blog"></div>
-                <div class="content__social"></div>
+                <div class="content__blog">
+                    <div class="wrap">
+                        <div class="blog">
+                            <div class="blog__item">
+                                <article class="article clearfix">
+                                    <h2 class="article__topic">
+                                        Last Article
+                                    </h2>
+                                    <div class="article__img">
+                                        <picture>
+                                            <source srcset="img/photo_1.png" media="(min-width:1440px)">
+                                            <source srcset="img/photo_tablet_1.png" media="(min-width:768px)">
+                                            <source srcset="img/photo_mobile_1.png" media="(min-width:320px)">
+                                            <img
+                                                    src="img/photo_1.png"
+                                                    srcset="img/photo_1.png@2x.png 2x"
+                                            >
+                                        </picture>
+                                    </div>
+                                    <h3 class="article__title">
+                                        Duis mollis, est non commodo luctus,
+                                        nisi erat porttitor ligula, eget lacinia.
+                                    </h3>
+                                    <div class="article__content">
+                                        <div class="article-content">
+                                            <p class="article-content__item">
+                                                Aenean lacinia bibendum nulla sed
+                                                consectetur. Aenean eu leo quam.
+                                                Pellentesque ornare sem lacinia quam
+                                                venenatis vestibulum. Donec sed odio dui.
+                                                Maecenas sed diam eget risus varius blandit
+                                                sit amet non magna.
+                                            </p>
+                                            <p class="article-content__item">
+                                                Donec sed odio dui. Etiam porta sem
+                                                malesuada magna mollis euismod. Nullam id
+                                                dolor id nibh ultricies vehicula ut id elit.
+                                            </p>
+                                            <p class="article-content__item">
+                                                Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+                                                ridiculus
+                                                mus. Sed posuere consectetur est at lobortis. Aenean eu leo quam.
+                                                Pellentesque
+                                                ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur
+                                                est at
+                                                lobortis.
+                                            </p>
+                                            <p class="article-content__item">
+                                                Maecenas sed diam eget risus varius blandit sit amet non magna. Aenean
+                                                lacinia
+                                                bibendum nulla sed consectetur. Praesent commodo cursus magna, vel
+                                                scelerisque
+                                                nisl consectetur et. Curabitur blandit tempus porttitor.
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="blog__item">
+                                <article class="article">
+                                    <h2 class="article__topic">
+                                        Centre Life
+                                    </h2>
+                                    <div class="article__img article__img_right">
+                                        <picture>
+                                            <source srcset="img/photo_2.png" media="(min-width:1440px)">
+                                            <source srcset="img/photo_tablet_2.png" media="(min-width:768px)">
+                                            <source srcset="img/photo_mobile_2.png" media="(min-width:320px)">
+                                            <img
+                                                    src="img/photo_2.png"
+                                                    srcset="img/photo_2.png@2x.png 2x"
+                                            >
+                                        </picture>
+                                    </div>
+                                    <h3 class="article__title">
+                                        Maecenas faucibus mollis interdum.
+                                        Morbi leo risus.
+                                    </h3>
+                                    <div class="article__content">
+                                        <div class="article-content">
+                                            <p class="article-content__item">
+                                                Aenean lacinia bibendum nulla sed
+                                                consectetur. Aenean eu leo quam.
+                                                Pellentesque ornare sem lacinia quam
+                                                venenatis vestibulum. Donec sed odio dui.
+                                                Maecenas sed diam eget risus varius blandit
+                                                sit amet non magna.
+                                            </p>
+                                            <p class="article-content__item">
+                                                Donec sed odio dui. Etiam porta sem
+                                                malesuada magna mollis euismod.
+                                            </p>
+                                            <p class="article-content__item">
+                                                Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+                                                mus. Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque
+                                                ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at
+                                                lobortis.
+                                            </p>
+                                            <p class="article-content__item">
+                                                Maecenas sed diam eget risus varius blandit sit amet non magna. Aenean lacinia
+                                                bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque
+                                                nisl consectetur et. Curabitur blandit tempus porttitor.
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content__social">
+                    <div class="wrap">
+                        <ul class="social">
+                            <li class="social__item social__item_fb">
+                                <a href="#" class="social__link"></a>
+                            </li>
+                            <li class="social__item social__item_tw">
+                                <a href="#" class="social__link"></a>
+                            </li>
+                            <li class="social__item social__item_ln">
+                                <a href="#" class="social__link"></a>
+                            </li>
+                            <li class="social__item social__item_ins">
+                                <a href="#" class="social__link"></a>
+                            </li>
+                            <li class="social__item social__item_gl">
+                                <a href="#" class="social__link"></a>
+                            </li>
+                            <li class="social__item social__item_yt">
+                                <a href="#" class="social__link"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
 
 
         </main>
+        <footer class="page-block__footer">
 
-        <main class="page-block__main">
-            <div class="main-content">
-                    <div class="main-content__row"></div>
+            <div class="wrap">
+                <div class="footer">
+                    <div class="footer__col">
+                        <div class="copyright">
+                            <p>Copyright © 2015 Java Competency Centre</p>
+                        </div>
+                    </div>
+                    <div class="footer__col footer__col_nav ">
+                        <ul class="footer-nav">
+                            <li class="footer-nav__item">
+                                <a href="" class="footer-nav__link">Help</a>
+                            </li>
+                            <li class="footer-nav__item ">
+                                <a href="" class="footer-nav__link">About Us</a>
+                            </li>
+                            <li class="footer-nav__item">
+                                <a href="" class="footer-nav__link">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__col">
+                        <div class="copyright copyright_epam">
+
+                            <a href="#">We Are Made in
+                                <EPAM> Systems
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </main>
+
+        </footer>
 
     </div>
 
