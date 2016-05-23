@@ -91,10 +91,9 @@ body{
 .slider__nav-btn{
     top: 46%;
     margin-top: -64px;
-    position: absolute;
+    display: none;
     width: 30px;
     padding: 40px 20px;
-
     cursor: pointer;
 }
 .slider__nav-btn_prev{
@@ -191,7 +190,7 @@ body{
     background-color: transparent;
     background-image: none;
 }
-.menu-nav-toggle_hidden{
+.header__item_menu-active .menu-nav-toggle{
     display: none;
 }
 .sr-only {
@@ -245,6 +244,7 @@ body{
     overflow: hidden;
 
 }
+
 .menu-list__item_btn{
     margin-bottom: 45px;
 }
@@ -267,12 +267,14 @@ body{
 .menu-list__item:hover:before, .menu-list__item:focus:before, .menu-list__item:active:before {
     right: 0;
 }
-.menu-list__item:hover{
-    color: #000;
-    /*border-bottom: 2px solid #c62a31;*/
+
+.menu-list__item_active:before{
+    display: none;
 }
-
-
+.menu-list__item:hover{
+    color: #fff;
+    opacity: 0.8;
+}
 
 .page-block__content{
     background: url("../img/textura.png") repeat center;
@@ -620,10 +622,17 @@ body{
         font-size: 0.875rem;
     }
     .menu-list__item{
+        color: #908081;
         margin-right: 25px;
         font-size: 1.25rem;
-        color: #908081;
         display: inline-block;
+    }
+    .menu-list__item:hover{
+        color: #000;
+    }
+    .menu-list__item_active{
+        border-bottom: 2px solid  #c62a31;
+        color: #000;
     }
     .news__header {
         padding-top: 3rem;
@@ -806,7 +815,10 @@ body{
         line-height: 1.2;
         padding-top: 1.2rem;
     }
-
+    .slider__nav-btn{
+        display: block;
+        position: absolute;
+    }
 }
 
 
