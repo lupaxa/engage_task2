@@ -1,0 +1,284 @@
+/*------------------------------------*\
+    main content
+\*------------------------------------*/
+
+
+@component content-info{
+
+    @descendent news{
+         margin-bottom: 0.7rem;
+    }
+}
+
+
+@component news{
+
+    @descendent header{
+        padding-top: 1.6rem;
+    }
+    @descendent item{
+        padding-top: 1.5rem;
+    }
+
+}
+
+@component news-header{
+    font-size: 1.5rem;
+    color: #454545;
+}
+@component agenda-header{
+    font-size: 1.5rem;
+    color: #454545;
+}
+ @component members-list-block-header{
+    font-size: 1.5rem;
+    color: #454545;
+}
+
+@component schedule{
+    @descendent agenda{
+        margin-bottom: 2.5rem;
+    }
+}
+
+@component agenda{
+    @descendent list{
+        margin-top: 1.3rem;
+    }
+}
+@component agenda-list{
+    margin-left: 20px;
+    @descendent item{
+        position: relative;
+        margin-bottom: 1.6rem;
+    }
+    @descendent item-style{
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background-color: #C62A31;
+        position: absolute;
+        left: -20px;
+        top: 5px;
+    }
+    @descendent time{
+        font-size: 0.75rem;
+        line-height: 1.25;
+        color: #000;
+    }
+    @descendent name{
+        color: #778081;
+    }
+    @descendent place{
+        color: #778081;
+    }
+}
+
+
+@component members-list-block {
+
+    @descendent header {
+        margin-bottom: 1.2rem;
+    }
+}
+@component members-list {
+
+    @descendent item {
+        padding-bottom: 1.6rem;
+    }
+    @descendent num {
+        display: inline-block;
+        border: 1px solid #cc4248;
+        border-radius: 50%;
+        padding: 6px 10px;
+        vertical-align: middle;
+        font-size: 12px;
+    }
+    @descendent name {
+        color: #C62A31
+    }
+    @descendent item-info {
+        display: inline-block;
+        padding-left: 15px;
+        vertical-align: -webkit-baseline-middle;
+    }
+
+}
+
+@component single-news-date{
+    font-size: 0.9rem;
+}
+
+
+@component single-news{
+    @descendent title{
+        padding: 0.5rem 0;
+        font-size: 1.31rem;
+    }
+    @descendent link{
+        display: block;
+        height: 100%;
+        color: #C62A31;
+        line-height: 1.25;
+    }
+}
+
+
+@component single-news-content{
+    font-size: 1rem;
+    color: #778081;
+    line-height: 1.4;
+}
+
+
+@media only screen and (min-width:768px) {
+
+    @component single-news {
+        @descendent title {
+            padding: 0.75rem 0;
+            padding-right: 28%;
+            padding-bottom: 1.2rem;
+            font-size: 1.5rem;
+        }
+    }
+    @component single-news-date {
+        font-size: 0.75rem;
+    }
+    @component single-news-content{
+        font-size: 0.875rem;
+    }
+
+    @component news-header{
+        font-size: 1.7rem;
+    }
+
+    @component news{
+
+        @descendent header{
+            padding-top: 3rem;
+        }
+        @descendent item{
+            padding-top: 1.8rem;
+        }
+
+    }
+
+    @component news-header{
+        font-size: 1.75rem;
+    }
+    @component agenda-header{
+        font-size: 1.75rem;
+    }
+    @component members-list-block-header{
+        font-size: 1.75rem;
+    }
+
+    @component members-list-block {
+        @descendent header {
+            margin-bottom: 1.7rem;
+        }
+    }
+
+    @component content-info{
+        @descendent schedule{
+            margin-top: 2.9rem;
+        }
+    }
+
+    @component schedule{
+        display: -webkit-box;
+        display: flex;
+        @descendent agenda{
+            width: 59%;
+            margin-bottom: 1.6rem;
+        }
+    }
+    @component agenda{
+        @descendent list{
+            margin-top: 1.8rem;
+        }
+    }
+    @component agenda-list {
+        @descendent time {
+            font-size: 0.9rem;
+        }
+        @descendent item-style{
+            top: 3px;
+        }
+    }
+}
+
+@media only screen and (min-width:1440px) {
+
+
+    @component content-info{
+        display: -webkit-box;
+        display: flex;
+        @descendent news{
+            width: 35%;
+        }
+        @descendent schedule{
+            width: 58%;
+        }
+    }
+    @component news{
+
+        @descendent header{
+            padding-top: 2.9rem;
+        }
+    }
+
+    @component members-list-block {
+        @descendent header {
+            margin-bottom: 2.1rem;
+        }
+    }
+
+    @component news-header{
+        font-size: 1.5rem;
+    }
+    @component agenda-header{
+        font-size: 1.5rem;
+    }
+    @component members-list-block-header{
+        font-size: 1.5rem;
+    }
+
+    @component agenda-list {
+        @descendent time {
+            font-size: 0.7rem;
+        }
+        @descendent name{
+            padding-top: 5px;
+        }
+        @descendent item-style{
+            left: -24px;
+            top: 0;
+        }
+    }
+
+    @component agenda{
+        @descendent list{
+            margin-top: 2.2rem;
+        }
+    }
+    @component single-news-content {
+        font-size: 0.875rem;
+        padding-right: 15%;
+        line-height: 1.2;
+    }
+
+    @component single-news{
+        @descendent title{
+            font-size: 1rem;
+            padding-bottom: 0.5em;
+        }
+        @descendent item{
+            margin-bottom: 1.8em;
+        }
+    }
+}
+
+
+
+

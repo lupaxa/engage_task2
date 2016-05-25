@@ -1,0 +1,40 @@
+@component footer{
+    padding: 1.3rem 0;
+    color: #fff;
+    font-size: 0.82rem;
+    text-align: center;
+    @descendent col{
+        @modifier nav{
+            width: 190px;
+            margin: 0 auto;
+            padding: 1.1rem 0;
+        }
+
+    }
+
+}
+
+@component footer-nav{
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+
+
+@media only screen and (min-width:768px) {
+
+
+    @component footer{
+        padding: 3rem 0;
+        display: -webkit-box;
+        display: flex;
+        @descendent col{
+            @modifier nav{
+                padding: 0;
+            }
+
+        }
+
+    }
+}

@@ -1,0 +1,292 @@
+
+/*------------------------------------*\
+    RESPONSIVE
+\*------------------------------------*/
+
+@media only screen and (min-width:320px) {
+    .wrap{
+        width: 87.5%;
+        max-width:708px;
+    }
+}
+
+@media only screen and (min-width:480px) {
+    .slider__call-action{
+        top: 30%;
+        margin-top: -125px;
+    }
+}
+
+@media only screen and (max-width:768px) {
+
+    .menu-nav__item-toggle{
+        display: block;
+    }
+    .menu-nav__item-menu{
+        /*display: none;*/
+    }
+
+}
+
+@media only screen and (min-width:768px) {
+    .wrap{
+        width:92%;
+        max-width: 1024px;
+    }
+    .call-action-date:before{
+        margin-right:30px;
+    }
+    .call-action__row-header {
+        padding-top: 1.5rem;
+    }
+    .call-action-header {
+        font-size: 2.5rem;
+        line-height: 1;
+    }
+    .slider__call-action{
+        top: 53%;
+        margin-top: -125px;
+    }
+    .slider__nav-pager {
+        bottom: 28px;
+    }
+    .call-action__row_date-btn{
+        display: -webkit-box;
+        display: flex;
+        padding-top: 1.25rem;
+        padding-left: 25px;
+        padding-right: 50px;
+    }
+    .call-action__date {
+        padding-top: 1.6rem;
+    }
+    .call-action-date {
+        font-size: 1.25rem;
+        padding-left: 0;
+    }
+    .call-action-btn-action {
+        padding-top: 0;
+    }
+    .call-action__row-description {
+        padding-top: 1rem;
+    }
+    .single-news__title{
+        padding: 0.75rem 0;
+        padding-right: 28%;
+        padding-bottom: 1.2rem;
+        font-size: 1.5rem;
+    }
+    .single-news-date {
+        font-size: 0.75rem;
+    }
+    .single-news-content{
+        font-size: 0.875rem;
+    }
+    .menu-list__item{
+        color: #908081;
+        margin-right: 25px;
+        font-size: 1.25rem;
+        display: inline-block;
+    }
+    .menu-list__item:hover{
+        color: #000;
+    }
+    .menu-list__item_active{
+        border-bottom: 2px solid  #c62a31;
+        color: #000;
+    }
+    .news__header {
+        padding-top: 3rem;
+    }
+    .news-header{
+        font-size: 1.7rem;
+    }
+    .news__item {
+        padding-top: 1.8rem;
+    }
+    .news-header, .agenda-header, .members-list-block-header {
+        font-size: 1.75rem;
+    }
+    .members-list-block__header {
+        margin-bottom: 1.7rem;
+    }
+    .content-info__schedule{
+        margin-top: 2.9rem;
+    }
+    .schedule{
+        display: -webkit-box;
+        display: flex;
+    }
+    .schedule__agenda{
+        width: 59%;
+        margin-bottom: 1.6rem;
+    }
+    .agenda__list {
+        margin-top: 1.8rem;
+    }
+    .agenda-list__time {
+        font-size: 0.9rem;
+    }
+    .menu-nav__item-menu {
+        display: block;
+        margin-top: 0;
+    }
+    .menu-list {
+        display: block;
+        padding-right: 0;
+    }
+    .menu-list__item {
+        margin-bottom: 5px;
+    }
+    .article__title {
+        padding-top: 0;
+        padding-right: 5%;
+        font-size: 1.5rem;
+        line-height: 1.4;
+    }
+    .article__img{
+        float: left;
+        padding-right: 30px;
+        padding-bottom: 20px;
+    }
+
+    .article__img_right{
+        float: right;
+        padding-left: 32px;
+        padding-right: 0;
+    }
+    .article__topic {
+        font-size: 1.7rem;
+    }
+    .article-content {
+        font-size: 1.15rem;
+    }
+    .content__social {
+        padding-bottom: 4.4rem;
+    }
+    .social {
+        width: 77%;
+        max-width: 695px;
+    }
+    .social__item{
+        width: 41px;
+        height: 41px;
+        background-image: url("../img/icons/Facebook_mobile.png");
+    }
+    .social__item_fb{
+        background-image: url("../img/icons/Facebook.png");
+    }
+    .social__item_tw{
+        background-image: url("../img/icons/Twitter.png");
+    }
+    .social__item_ln{
+        background-image: url("../img/icons/LinkedIN.png");
+    }
+    .social__item_ins{
+        background-image: url("../img/icons/Instagram.png");
+    }
+    .social__item_gl{
+        background-image: url("../img/icons/google.png");
+    }
+    .social__item_yt{
+        background-image: url("../img/icons/Youtube.png");
+    }
+    .footer {
+        padding: 3rem 0;
+        display: -webkit-box;
+        display: flex;
+    }
+    .footer__col_nav{
+        padding: 0;
+    }
+}
+
+@media only screen and (min-width:1024px) {
+
+
+}
+
+@media only screen and (min-width:1140px) {
+
+}
+
+@media only screen and (min-width:1440px) {
+    .slider__call-action {
+        top: 55%;
+        right: 23%;
+    }
+    .content-info{
+        display: -webkit-box;
+        display: flex;
+    }
+    .content-info__news{
+        width: 35%;
+    }
+    .content-info__schedule{
+        width: 58%;
+    }
+    .news__header {
+        padding-top: 2.9rem;
+    }
+    .members-list-block__header {
+        margin-bottom: 2.1rem;
+    }
+    .news-header, .agenda-header, .members-list-block-header {
+        font-size: 1.5rem;
+    }
+    .agenda-list__time {
+        font-size: 0.7rem;
+    }
+    .agenda-list__name {
+        padding-top: 5px;
+    }
+    .agenda__list {
+        margin-top: 2.2rem;
+    }
+    .agenda-list__item {
+        margin-bottom: 1.8em;
+    }
+    .single-news-content {
+        font-size: 0.875rem;
+        padding-right: 15%;
+        line-height: 1.2;
+    }
+    .single-news__title {
+        font-size: 1rem;
+        padding-bottom: 0.5em;
+    }
+    .blog{
+        display: -webkit-box;
+        display: flex;
+    }
+    .blog__item:nth-child(odd){
+        padding-right: 35px;
+    }
+    .article__title {
+        font-size: 1rem;
+        padding-right: 0;
+        line-height: 1.25;
+        padding-bottom: 1.7rem;
+    }
+    .article-content {
+        font-size: 0.875rem;
+    }
+    .article__topic {
+        font-size: 1.5rem;
+        padding-bottom: 2.1rem;
+    }
+    .article__img {
+        padding-right: 23px;
+    }
+    .article__img_right {
+        padding-right: 0;
+    }
+    .article-content__item{
+        line-height: 1.2;
+        padding-top: 1.2rem;
+    }
+    .slider__nav-btn{
+        display: block;
+        position: absolute;
+    }
+}

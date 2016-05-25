@@ -1,0 +1,226 @@
+/*  slider*/
+
+
+
+
+
+@component slider{
+    position: relative;
+    @descendent call-action{
+        width: 87.5%;
+        min-width: 280px;
+        max-width: 525px;
+        position: absolute;
+        top: 20px;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+    }
+    @descendent nav-btn{
+        top: 46%;
+        margin-top: -64px;
+        display: none;
+        width: 30px;
+        padding: 40px 20px;
+        cursor: pointer;
+        @modifier prev{
+            left: 14%;
+        }
+        @modifier next{
+            right: 15%;
+        }
+    }
+    @descendent nav-pager{
+        position: absolute;
+        bottom: 18px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 50%;
+        text-align: center;
+    }
+
+}
+
+
+
+
+
+@component slider-pager {
+    display: table;
+    margin: 0 auto;
+    @descendent item{
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        margin-right: 10px;
+    }
+    @descendent btn{
+        display: block;
+        height: 100%;
+        border: 1px solid #808080;
+        box-sizing: border-box;
+            @modifier active{
+            background-color: #808080;
+            }
+    }
+
+}
+
+
+@component call-action{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: #fff;
+    @descendent row{
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-pack: justify;
+        justify-content: space-between;
+        padding-left: 20px;
+        padding-right: 20px;
+        @modifier date-btn{
+            display: block;
+            padding: 1.1rem 0 1.25rem 0;
+        }
+        @modifier header{
+            padding-top: 1.3rem;
+        }
+        @modifier description{
+            padding-top: 0.7rem;
+            font-size: 1.125rem;
+            line-height: 1.34;
+        }
+
+    }
+}
+
+@component slider-list{
+    @descendent item{
+        & img{
+        width: 100%;
+        }
+    }
+}
+@component call-action-header{
+    font-size: 2.1rem;
+    line-height: 1.15;
+    font-weight: 400;
+}
+
+
+@component call-action-date{
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    font-size: 1.1rem;
+    padding-left: 24px;
+
+    &:before{
+    content: "";
+    display: inline-block;
+    width: 32px;
+    height: 31px;
+    margin-right:7px;
+    background: url("../img/icons/calendar.png") no-repeat center;
+    }
+
+}
+
+
+@component call-action-btn-action{
+    text-align: center;
+    padding-top: 1.25rem;
+}
+
+
+@media only screen and (min-width:480px) {
+
+    @component slider{
+        position: relative;
+        @descendent call-action{
+            top: 30%;
+            margin-top: -125px;
+        }
+    }
+}
+
+@media only screen and (min-width:768px) {
+    @component slider{
+        @descendent call-action{
+            top: 53%;
+            margin-top: -125px;
+        }
+        @descendent nav-pager{
+            bottom: 28px;
+        }
+    }
+
+    @component call-action{
+        @descendent row{
+            @modifier header{
+                padding-top: 1.5rem;
+            }
+            @modifier description{
+                padding-top: 1rem;
+            }
+        }
+    }
+
+
+    @component call-action-date{
+        &:before{
+             margin-right:30px;
+         }
+    }
+
+    @component call-action-header {
+        font-size: 2.5rem;
+        line-height: 1;
+    }
+
+
+    @component call-action{
+        @descendent row{
+            @modifier date-btn{
+                display: -webkit-box;
+                display: flex;
+                padding-top: 1.25rem;
+                padding-left: 25px;
+                padding-right: 50px;
+            }
+        }
+    }
+
+
+    /*.call-action__date {*/
+        /*padding-top: 1.6rem;*/
+    /*}*/
+
+    @component call-action-date {
+        font-size: 1.25rem;
+        padding-left: 0;
+    }
+
+    @component call-action-btn-action{
+        padding-top: 0;
+    }
+
+}
+
+@media only screen and (min-width:1440px) {
+    @component slider{
+        @descendent call-action{
+            top: 55%;
+            right: 23%;
+        }
+        @descendent nav-btn{
+            display: block;
+            position: absolute;
+        }
+    }
+}
+
+

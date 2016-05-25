@@ -1,0 +1,17 @@
+/*  Close button*/
+
+@component btn-close{
+    cursor: pointer;
+}
+
+
+@component  btn-action{
+    width: 110px;
+    height: 40px;
+    border-radius: 3px;
+    font-size: 0.875rem;
+    background-color: #c62a31;
+    text-transform: uppercase;
+    letter-spacing: -0.8px;
+    cursor: pointer;
+}

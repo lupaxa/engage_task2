@@ -1,0 +1,20 @@
+.footer{
+    padding: 1.3rem 0;
+    color: #fff;
+    font-size: 0.82rem;
+    text-align: center;
+
+}
+
+.footer__col_nav{
+    width: 190px;
+    margin: 0 auto;
+    padding: 1.1rem 0;
+}
+
+.footer-nav{
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}

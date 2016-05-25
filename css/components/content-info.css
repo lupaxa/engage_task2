@@ -1,0 +1,114 @@
+/*------------------------------------*\
+    main content
+\*------------------------------------*/
+
+.content-info__news{
+    margin-bottom: 0.7rem;
+}
+
+.news__header{
+    padding-top: 1.6rem;
+}
+
+.news-header, .agenda-header, .members-list-block-header{
+    font-size: 1.5rem;
+    color: #454545;
+}
+
+.schedule__agenda{
+    margin-bottom: 2.5rem;
+}
+
+.agenda__list{
+    margin-top: 1.3rem;
+}
+
+.agenda-list{
+    margin-left: 20px;
+}
+
+.agenda-list__item{
+    position: relative;
+    margin-bottom: 1.6rem;
+}
+
+.agenda-list__item-style{
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #C62A31;
+    position: absolute;
+    left: -24px;
+}
+
+.members-list-block__header{
+    margin-bottom: 1.2rem;
+}
+
+.single-news-date{
+    font-size: 0.9rem;
+}
+
+.agenda-list__name{
+}
+
+.single-news__title{
+    padding: 0.5rem 0;
+    font-size: 1.31rem;
+}
+
+.single-news__link{
+    display: block;
+    height: 100%;
+    color: #C62A31;
+    line-height: 1.25;
+}
+
+.news__item{
+    padding-top: 1.5rem;
+}
+
+.single-news__content{
+    /*padding-bottom: 1.55rem;*/
+}
+
+.single-news-content {
+    font-size: 1rem;
+    color: #778081;
+    line-height: 1.4;
+}
+
+.agenda-list__time{
+    font-size: 0.75rem;
+    line-height: 1.25;
+    color: #000;
+}
+
+.agenda-list__name, .members-list__place{
+    color: #778081;
+}
+
+.members-list__item{
+    padding-bottom: 1.6rem;
+}
+
+.members-list__num{
+    display: inline-block;
+    border: 1px solid #cc4248;
+    border-radius: 50%;
+    padding: 6px 10px;
+    vertical-align: middle;
+    font-size: 12px;
+}
+
+.members-list__name{
+    color: #C62A31
+}
+
+.members-list__item-info{
+    display: inline-block;
+    padding-left: 15px;
+    vertical-align: -webkit-baseline-middle;
+}
+
+

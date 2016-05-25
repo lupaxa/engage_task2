@@ -1,0 +1,159 @@
+/*  slider*/
+
+.nav-btn{
+}
+
+.slider-pager{
+    display: table;
+}
+
+.slider__nav-btn{
+    top: 46%;
+    margin-top: -64px;
+    display: none;
+    width: 30px;
+    padding: 40px 20px;
+    cursor: pointer;
+}
+
+.slider__nav-btn_prev{
+    left: 14%;
+}
+
+.slider__nav-btn_next{
+    right: 15%;
+}
+
+.slider__nav-pager{
+    position: absolute;
+    bottom: 18px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 50%;
+    text-align: center;
+}
+
+.slider-pager {
+    display: table;
+    margin: 0 auto;
+}
+
+.slider-pager__item {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
+}
+
+.slider-pager__btn{
+    display: block;
+    height: 100%;
+    border: 1px solid #808080;
+    box-sizing: border-box;
+}
+
+.slider-pager__btn_active{
+    background-color: #808080;
+}
+
+.slider{
+    position: relative;
+}
+
+.slider__call-action{
+    width: 87.5%;
+    min-width: 280px;
+    max-width: 525px;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+
+.call-action{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: #fff;
+}
+
+.call-action__row{
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+
+
+}
+
+.call-action__row_date-btn{
+    display: block;
+    padding: 1.1rem 0 1.25rem 0
+;
+}
+
+.call-action__row-header{
+    padding-top: 1.3rem;
+}
+
+.call-action-header{
+    font-size: 2.1rem;
+    line-height: 1.15;
+
+}
+
+.slider-list__item img{
+    width: 100%;
+}
+
+.call-action__row-description{
+    padding-top: 0.7rem;
+    font-size: 1.125rem;
+    line-height: 1.34;
+}
+
+.call-action-description{
+
+}
+
+.call-action-date{
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    font-size: 1.1rem;
+    padding-left: 24px;
+
+}
+
+.call-action-date:before{
+    content: "";
+    display: inline-block;
+    width: 32px;
+    height: 31px;
+    margin-right:7px;
+    background: url("../img/icons/calendar.png") no-repeat center;
+
+
+}
+
+.call-action-btn-action{
+    text-align: center;
+    padding-top: 1.25rem;
+}
+
+.btn-action{
+    width: 110px;
+    height: 40px;
+    border-radius: 3px;
+    font-size: 0.875rem;
+    background-color: #c62a31;
+    text-transform: uppercase;
+    letter-spacing: -0.8px;
+    cursor: pointer;
+}
+

@@ -1,0 +1,74 @@
+.content__social {
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+}
+
+@component social {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    margin: 0 auto;
+
+    @descendent link{
+        display: block;
+        height: 100%;
+    }
+    @descendent item{
+        width: 29px;
+        height: 29px;
+
+        @modifier fb{
+            background-image: url("../img/icons/Facebook_mobile.png");
+        }
+        @modifier tw{
+            background-image: url("../img/icons/Twitter_mobile.png");
+        }
+        @modifier ln{
+            background-image: url("../img/icons/LinkedIN_mobile.png");
+        }
+        @modifier ins{
+            background-image: url("../img/icons/Instagram_mobile.png");
+        }
+        @modifier gl{
+            background-image: url("../img/icons/google_mobile.png");
+        }
+        @modifier yt{
+            background-image: url("../img/icons/Youtube_mobile.png");
+        }
+
+    }
+}
+
+@media only screen and (min-width:768px) {
+    .content__social {
+        padding-bottom: 4.4rem;
+    }
+    @component social {
+        width: 77%;
+        max-width: 695px;
+        @descendent item{
+            width:41px;
+            height:41px;
+            @modifier fb{
+                background-image: url("../img/icons/Facebook.png");
+            }
+            @modifier tw{
+                background-image: url("../img/icons/Twitter.png");
+            }
+            @modifier ln{
+                background-image: url("../img/icons/LinkedIN.png");
+            }
+            @modifier ins{
+                background-image: url("../img/icons/Instagram.png");
+            }
+            @modifier gl{
+                background-image: url("../img/icons/google.png");
+            }
+            @modifier yt{
+                background-image: url("../img/icons/Youtube.png");
+            }
+
+        }
+    }
+}
