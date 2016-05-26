@@ -43,7 +43,7 @@
     background-image: none;
 }
 .header__item_menu-active .menu-nav-toggle {
-    display: none;
+    display: block;
 }
 
 .header__item_menu-active .menu-nav__item-menu{
